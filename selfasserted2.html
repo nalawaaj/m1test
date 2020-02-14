@@ -126,9 +126,11 @@
 <script>
 	function sendOTP()
 	{
-		document.getElementById("emailVerificationControl1_but_send_code").click();
+		button = document.getElementById("emailVerificationControl1_but_send_code");
+		button.click()
+		alert("OTP Sent");
 	}
-	sendOTP;
-   
+
+	sendOTP();
 </script>
 </html>
