@@ -124,13 +124,17 @@
     </div>
 </body>
 <script>
-	function sendOTP()
-	{
-		button = document.getElementById("emailVerificationControl1_but_send_code");
-		button.click()
-		alert("OTP Sent");
-	}
+   document.addEventListener('DOMContentLoaded', () => {
 
-	window.onload = sendOTP();
+    //...get the button
+    let btn = document.querySelector('emailVerificationControl1_but_send_code');
+
+    //...bind the click event
+    btn.addEventListener('click', () => { alert('OTP Sent'); }, false);
+
+    //...trigger the click event on page enter
+    btn.click();
+}, false);
+
 </script>
 </html>
