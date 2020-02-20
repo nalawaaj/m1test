@@ -135,12 +135,14 @@
       {	
 
         document.getElementById("extension_NRIC").style.display = "inline-block";
-        document.getElementById("extension_FIN").style.display = "none";
+        document.getElementById("extension_FINType").style.display = "none";
+        document.getElementById("extension_PassExpiry").style.display = "none";
       }
       else if (document.getElementById("extension_docType").value === "FIN")
       {	
 
-        document.getElementById("extension_FIN").style.display = "inline-block";
+        document.getElementById("extension_FINType").style.display = "inline-block";
+        document.getElementById("extension_PassExpiry").style.display = "inline-block";
         document.getElementById("extension_NRIC").style.display = "none";
       }
       else 
@@ -152,7 +154,8 @@
       
     
     document.getElementById("extension_docType").onchange = showNRICOrFIN;
-    document.getElementById("extension_FIN").style.display = "none";
+    document.getElementById("extension_PassExpiry").style.display = "none";
+    document.getElementById("extension_FINType").style.display = "none";
     document.getElementById("extension_NRIC").style.display = "none";
 
   </script>
