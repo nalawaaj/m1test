@@ -20,6 +20,8 @@
             src: url(https://m1sb1.b2clogin.com/static/tenant/templates/fonts/segoeui_bold.WOFF);
             font-weight: bold;
         }
+
+
         #AmazonExchange {
           background-image: url(https://m1sb1.b2clogin.com/static/tenant/templates/idp_logos/colored/amazon.svg);
         }
@@ -131,13 +133,13 @@
     function showNRICOrFIN(){
       if (document.getElementById("extension_docType").value === "NRIC")
       {	
-        alert("NRIC Selected");
+
         document.getElementById("extension_NRIC").style.display = "inline-block";
         document.getElementById("extension_FIN").style.display = "none";
       }
       else if (document.getElementById("extension_docType").value === "FIN")
       {	
-        alert("FIN Selected");
+
         document.getElementById("extension_FIN").style.display = "inline-block";
         document.getElementById("extension_NRIC").style.display = "none";
       }
@@ -148,8 +150,10 @@
       }
     }
       
-    alert("Welcome");
     
     document.getElementById("extension_docType").onchange = showNRICOrFIN;
+    document.getElementById("extension_FIN").style.display = "none";
+    document.getElementById("extension_NRIC").style.display = "none";
+
   </script>
 </html>
