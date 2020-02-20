@@ -124,4 +124,30 @@
     </div>
 
 
-</body></html>
+</body>
+<script>
+	function showNRICOrFIN(){
+		if (document.getElementById("extension_docType").value == "NRIC")
+		{
+			nric.disabled = false;
+			fin.disabled = true;
+		}
+		else if (document.getElementById("extension_docType").value == "FIN")
+		{
+			fin.disabled = false;
+			nric.disabled = true;
+		}
+		else 
+		{
+			fin.disabled = true;
+			nric.disabled = true;
+		}
+	}
+    
+    doctype = document.getElementById("extension_docType");
+	nric = document.getElementById("extension_NRIC");
+	fin = document.getElementById("extension_FIN");
+	
+	doctype.onclick = showNRICOrFIN;
+</script>
+</html>
