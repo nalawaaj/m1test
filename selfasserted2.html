@@ -126,9 +126,7 @@
 <script>  
     function sendOTP()
 	{
-		button = document.getElementById("M1-DC-WebEmail-Verification2_but_send_code");
-		button.click()
-		alert("OTP Sent");
+		setTimeout(() => { document.getElementById("M1-DC-WebEmail-Verification2_but_send_code").click(); }, 5000);
 	}
 
 	window.onload= sendOTP();
