@@ -131,9 +131,7 @@
   <script type="text/javascript"> 
 
     function showNRICOrFIN(){
-	  var url = window.location.href;
-	  var basketId = getParameter(url, 'basket-Id');
-	  document.getElementById("basketId").value = basketId;
+	 
 		
       if (document.getElementById("extension_docType").value === "NRIC")
       {	
@@ -171,6 +169,10 @@
     document.getElementById("extension_FINType").style.display = "none";
     document.getElementById("extension_NRIC").style.display = "none";
 	document.getElementById("extension_FIN").style.display = "none";
-				
+	
+	var url = window.location.href;
+	var basketId = getParameter(url, 'basket-Id');
+	document.getElementById("basketId").value = basketId;
+	
   </script>
 </html>
